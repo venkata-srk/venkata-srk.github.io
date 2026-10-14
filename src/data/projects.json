@@ -1,0 +1,126 @@
+[
+  {
+    "id": "torontoxp",
+    "title": "TorontoXP Sports Activity Finder",
+    "description": "A full-stack application that helps Toronto residents discover sports activities at community centres. Built with React, Vite, and AWS Lambda, featuring real-time schedule data and smart filtering.",
+    "highlights": [
+      "Brings Toronto community-centre sports activities into one discovery experience.",
+      "Uses schedule data and filters to help visitors narrow down activities.",
+      "Built with React, Vite, and AWS Lambda."
+    ],
+    "category": "Full Stack & AI Integration",
+    "image": null,
+    "liveUrl": "https://torontoxp.github.io/SportsActivityFinder",
+    "githubUrl": "https://github.com/torontoxp/SportsActivityFinder",
+    "prdUrl": "/TorontoXP_PRD_v1.3.pdf",
+    "featured": true
+  },
+  {
+    "id": "qwen-sarcastic-llm",
+    "title": "Fine-Tuned and Deployed a Custom LLM",
+    "description": "Fine-tuned Qwen 3.5 9B with MLX on Apple Silicon to generate sarcastic conversational responses, then published the model to Hugging Face.",
+    "category": "AI & Machine Learning",
+    "overview": [
+      "Used LoRA fine-tuning with the MLX framework on Apple Silicon to adapt Qwen 3.5 9B for sarcastic conversational responses.",
+      "Packaged and published the resulting model on Hugging Face for inference and distribution."
+    ],
+    "highlights": [
+      "Monitored and analyzed training metrics throughout LoRA fine-tuning.",
+      "Tracked memory utilization and performance characteristics on Apple Silicon.",
+      "Published the fine-tuned model for others to access on Hugging Face."
+    ],
+    "modelUrl": "https://huggingface.co/vesirak/qwen3.5-9b-sarcastic",
+    "featured": false
+  },
+  {
+    "id": "identity-evolution-lab",
+    "title": "Identity Evolution Lab",
+    "description": "An interactive showcase that traces modern identity and access management from passwords and sessions through MFA, tokens, OAuth, SSO, passkeys, and authorization.",
+    "category": "Security Exploration",
+    "overview": [
+      "Identity Evolution Lab is a frontend-only visual simulation. Visitors follow a fictional employee through the layers of a modern identity system and see how authentication, authorization, sessions, tokens, and federation work together.",
+      "It demonstrates concepts rather than providing a production identity service. Credentials, cryptographic checks, redirects, and WebAuthn ceremonies are illustrative browser-side interactions."
+    ],
+    "highlights": [
+      "An interactive journey covers password sign-in, TOTP, JWTs, OAuth 2.0, OpenID Connect, SSO, passkeys, and permissions.",
+      "A playground compares authentication and authorization outcomes, including 200, 401, and 403 responses.",
+      "Architecture views and an audit inspector connect individual actions to the wider identity system."
+    ],
+    "liveUrl": "https://identityevolutionlab.github.io/",
+    "githubUrl": "https://github.com/IdentityEvolutionLab/IdentityEvolutionLab.github.io",
+    "featured": true
+  },
+  {
+    "id": "intqrac",
+    "title": "IntQRac",
+    "description": "An independent QR-assisted Interac e-Transfer concept that makes a recipient alias scannable and lets a mock banking app resolve and review the payee before a simulated transfer.",
+    "category": "Fintech Product Prototype",
+    "overview": [
+      "IntQRac explores a faster way to start an e-Transfer to a first-time or one-time payee. A QR code carries an email address or Canadian phone number and can optionally pre-fill an amount, message, and reference. The sender's banking app remains responsible for resolving the recipient and presenting the final review step.",
+      "The frontend-only prototype uses a local mock Autodeposit service and fictional banking data. It does not connect to Interac or move money."
+    ],
+    "highlights": [
+      "Generates and scans real QR images using an experimental ietqr://pay format.",
+      "Validates QR data, resolves the recipient through a mock Autodeposit lookup, and shows the verified name before the sender continues.",
+      "Simulates payment review and compares the concept with existing Canadian payment experiences."
+    ],
+    "liveUrl": "https://intqrac.github.io/",
+    "githubUrl": "https://github.com/IntQRac/intqrac.github.io",
+    "featured": true
+  },
+  {
+    "id": "ping2peer",
+    "title": "Ping2Peer",
+    "description": "A decentralized chat application for pinging and messaging peers on the network.",
+    "highlights": [
+      "Explores direct chat between peers in a decentralized network.",
+      "Built with JavaScript and browser local storage."
+    ],
+    "category": "Full Stack",
+    "image": null,
+    "liveUrl": "https://ping2peer.github.io",
+    "githubUrl": "https://github.com/ping2peer/ping2peer.github.io",
+    "featured": false
+  },
+  {
+    "id": "invoicebingo",
+    "title": "InvoiceBingo",
+    "description": "An invoicing solution and lightweight POS designed to save time for small businesses and freelancers.",
+    "highlights": [
+      "Combines invoicing with a lightweight point-of-sale workflow.",
+      "Designed for small businesses and freelancers."
+    ],
+    "category": "Full Stack",
+    "image": null,
+    "liveUrl": "https://www.invoicebingo.com",
+    "featured": false
+  },
+  {
+    "id": "jsonlife-table-editor",
+    "title": "JSONLife Table Editor",
+    "description": "An empowering and elegant JSON viewer and editor that transforms inherently chaotic & tangled JSON text into an intuitive, editable table.",
+    "highlights": [
+      "Presents JSON as an editable table instead of raw text.",
+      "Focuses on making complex JSON easier to inspect and change."
+    ],
+    "category": "Frontend",
+    "image": null,
+    "liveUrl": "https://jsonlife.github.io/json-table-editor",
+    "githubUrl": "https://github.com/jsonlife/json-table-editor",
+    "featured": false
+  },
+  {
+    "id": "telugu-lessa",
+    "title": "Telugu Lessa",
+    "description": "Telugu Lessa is an effort to reinforce fundamentals and carry forward the legacy of Telugu language.",
+    "highlights": [
+      "Supports learning and reinforcing Telugu language fundamentals.",
+      "Built with HTML, CSS, JavaScript, Tailwind CSS, and React."
+    ],
+    "category": "Frontend",
+    "image": null,
+    "liveUrl": "https://telugulessa.github.io/",
+    "githubUrl": "https://github.com/telugulessa/telugulessa.github.io",
+    "featured": false
+  }
+]

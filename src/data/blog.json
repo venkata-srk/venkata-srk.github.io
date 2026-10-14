@@ -1,0 +1,42 @@
+[
+  {
+    "id": "blog-1",
+    "title": "Why Every Developer Should Think Like a Product Manager",
+    "date": "2026-06-10",
+    "readingTime": "6 min read",
+    "tags": ["Product Thinking", "Career"],
+    "excerpt": "The best software isn't just well-coded — it's well-reasoned. Here's how adopting a product mindset transformed the way I approach every feature I build.",
+    "content": "The best software isn't just well-coded — it's well-reasoned. After years of shipping features, I realized that the most impactful work I did wasn't about elegant algorithms or clean architecture. It was about asking the right questions before writing a single line of code.\n\nProduct thinking starts with empathy. Who is this for? What problem are we actually solving? Is this the most valuable thing we could be building right now? These questions sound simple, but they're surprisingly rare in engineering conversations.\n\nHere are three practices I've adopted that bridge the gap between engineering and product thinking...",
+    "featured": true
+  },
+  {
+    "id": "blog-2",
+    "title": "The Art of Breaking Things: A QA Mindset for Builders",
+    "date": "2026-05-22",
+    "readingTime": "8 min read",
+    "tags": ["QA", "Engineering"],
+    "excerpt": "Quality isn't a phase — it's a perspective. How thinking like a tester makes you a better developer, and why the best teams blur the line between building and breaking.",
+    "content": "There's a common misconception that QA is about finding bugs. It's not. QA is about understanding systems deeply enough to predict where they'll fail.\n\nWhen I approach any feature — whether I'm building it or reviewing it — I think about edge cases, race conditions, and the assumptions baked into the happy path. This isn't pessimism; it's rigor.\n\nThe best quality engineers I've worked with share one trait: they think in systems, not screens. They ask 'what happens when...' before anyone else does.",
+    "featured": true
+  },
+  {
+    "id": "blog-3",
+    "title": "Connecting Code to Revenue: What Developers Get Wrong About Business",
+    "date": "2026-04-15",
+    "readingTime": "5 min read",
+    "tags": ["Business", "Career"],
+    "excerpt": "Understanding the business context of your code isn't optional — it's what separates good engineers from great ones. Here's how I learned to speak the language of impact.",
+    "content": "Early in my career, I measured success in pull requests merged and story points completed. I was productive, but I wasn't impactful.\n\nThe shift happened when I started sitting in on business reviews. I learned about CAC, LTV, churn rates, and runway. Suddenly, the feature prioritization that seemed arbitrary made perfect sense.\n\nNow, when I estimate effort for a feature, I also think about its expected business impact. When I propose a technical investment, I frame it in terms the business cares about: time saved, revenue protected, risk mitigated.",
+    "featured": true
+  },
+  {
+    "id": "blog-4",
+    "title": "Building Accessible UIs: Beyond the Checklist",
+    "date": "2026-03-28",
+    "readingTime": "7 min read",
+    "tags": ["Engineering", "QA"],
+    "excerpt": "Accessibility isn't about compliance — it's about craft. A deep dive into building interfaces that truly work for everyone, with real examples from production.",
+    "content": "WCAG guidelines are necessary but not sufficient. True accessibility requires understanding how people actually use assistive technology, and that means testing with real users, not just automated scanners.\n\nIn this article, I walk through five common patterns that pass automated accessibility checks but fail real-world usability tests. For each, I provide the fix and explain the underlying principle.",
+    "featured": false
+  }
+]

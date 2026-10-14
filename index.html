@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="description"
+    content="Portfolio of a generalist — Software Developer, Product Thinker, QA Engineer, and Business Strategist. Explore projects and UX critiques." />
+  <meta property="og:title" content="Portfolio — Developer × Product × QA × Business" />
+  <meta property="og:description" content="I build products, break bugs, and think in systems." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <script>
+    window.sa_event = window.sa_event || function () {
+      (window.sa_event.q = window.sa_event.q || []).push(Array.from(arguments));
+    };
+  </script>
+  <script data-collect-dnt="true" async src="https://www.secretpocket.club/simpleScript.js"></script>
+  <script data-goatcounter="https://myportfolio.goatcounter.com/count" data-goatcounter-settings='{"no_onload":true}'
+    async src="https://gc.zgo.at/count.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kanchenjunga:wght@400;500;600;700&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Marmelad&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=SUSE:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Notch:wght@200..700&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap"
+    rel="stylesheet">
+  <title>VenkataSRK Portfolio — Product Builder</title>
+  <script type="text/javascript">
+    (function (l) {
+      if (l.search[1] === 'p') {
+        var decoded = l.search.slice(1).split('&').map(function (s) {
+          return s.replace(/~and~/g, '&')
+        }).filter(function (s) {
+          return s.slice(0, 2) === 'p='
+        })[0].slice(2);
+        var q = l.search.slice(1).split('&').map(function (s) {
+          return s.replace(/~and~/g, '&')
+        }).filter(function (s) {
+          return s.slice(0, 2) === 'q='
+        })[0];
+        var search = q ? '?' + q.slice(2) : '';
+        window.history.replaceState(null, null,
+          l.pathname.slice(0, -1) + decoded + search + l.hash
+        );
+      }
+    }(window.location));
+  </script>
+</head>
+
+<body>
+  <nav class="nav" id="main-nav">
+    <div class="nav-inner">
+
+      <div class="nav-left" style="display: flex; align-items: center; height: 90px;">
+        <a href="/" class="nav-logo">venkata<span>srk</span></a>
+      </div>
+
+      <div class="nav-center" style="display: flex; justify-content: center; position: relative;">
+        <!-- Lamp SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 130" class="lamp" height="180">
+          <g>
+            <circle class="bulb" cx="30" cy="109.3" r="10.7" />
+            <line class="lamp-detail" x1="28.1" y1="108.1" x2="27.4" y2="113.4" />
+            <line class="lamp-detail" x1="32" y1="108.1" x2="32.6" y2="113.4" />
+            <polyline class="lamp-detail"
+              points="27.8,113.5 28.3,112.8 28.8,113.5 29.6,112.8 30,113.5 30.7,112.9 31.2,113.5 31.8,112.8 32.3,113.5" />
+          </g>
+          <rect class="lamp-body" x="20.7" y="66.7" width="18.6" height="15.6" />
+          <rect class="lamp-body" x="28.5" y="0" width="3" height="66.7" />
+          <path class="lamp-body" d="M30,80.3c-16.6,0-30,13.4-30,30h60C60,93.8,46.6,80.3,30,80.3z" />
+        </svg>
+      </div>
+
+      <div class="nav-right" style="display: flex; align-items: center; height: 90px; gap: 1rem;">
+        <div class="nav-links" id="nav-links">
+          <a href="/about" class="nav-link" data-nav="about">About</a>
+          <a href="/projects" class="nav-link" data-nav="projects">Projects</a>
+          <a href="/critiques" class="nav-link" data-nav="critiques">Critiques</a>
+          <a href="/contact" class="nav-link" data-nav="contact">Contact</a>
+        </div>
+
+        <div class="font-choosers-container" hidden>
+          <select id="heading-font-chooser" class="font-chooser" aria-label="Choose heading font" title="Heading Font"
+            style="font-size: 10px; padding: 2px;">
+            <option value="'Inter', sans-serif">Inter (Heading)</option>
+            <option value="'Figtree', sans-serif">Figtree</option>
+            <option value="'GFS Neohellenic', sans-serif">GFS Neohellenic</option>
+            <option value="'IBM Plex Serif', serif" selected>IBM Plex Serif</option>
+            <option value="'Kanchenjunga', sans-serif">Kanchenjunga</option>
+            <option value="'Livvic', sans-serif">Livvic</option>
+            <option value="'Lora', serif">Lora</option>
+            <option value="'Marmelad', sans-serif">Marmelad</option>
+            <option value="'Merriweather', serif">Merriweather</option>
+            <option value="'SUSE', sans-serif">SUSE</option>
+            <option value="'Stack Sans Notch', sans-serif">Stack Sans Notch</option>
+            <option value="'Yrsa', serif">Yrsa</option>
+          </select>
+          <select id="body-font-chooser" class="font-chooser" aria-label="Choose body font" title="Body Font"
+            style="font-size: 10px; padding: 2px;">
+            <option value="'Inter', sans-serif">Inter (Body)</option>
+            <option value="'Figtree', sans-serif">Figtree</option>
+            <option value="'GFS Neohellenic', sans-serif">GFS Neohellenic</option>
+            <option value="'IBM Plex Serif', serif">IBM Plex Serif</option>
+            <option value="'Kanchenjunga', sans-serif" selected>Kanchenjunga</option>
+            <option value="'Livvic', sans-serif">Livvic</option>
+            <option value="'Lora', serif">Lora</option>
+            <option value="'Marmelad', sans-serif">Marmelad</option>
+            <option value="'Merriweather', serif">Merriweather</option>
+            <option value="'SUSE', sans-serif">SUSE</option>
+            <option value="'Stack Sans Notch', sans-serif">Stack Sans Notch</option>
+            <option value="'Yrsa', serif">Yrsa</option>
+          </select>
+        </div>
+
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to light theme" hidden>
+          <span class="icon">☀️</span>
+        </button>
+
+        <button class="nav-hamburger" id="nav-hamburger" type="button" aria-label="Open menu" aria-controls="nav-links"
+          aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <!-- Main Content -->
+  <main class="main-content" id="app"></main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Built with intention and care. © <span id="footer-year"></span> All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
