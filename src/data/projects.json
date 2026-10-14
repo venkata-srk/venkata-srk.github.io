@@ -2,11 +2,16 @@
   {
     "id": "torontoxp",
     "title": "TorontoXP Sports Activity Finder",
-    "description": "A full-stack application that helps Toronto residents discover sports activities at community centres. Built with React, Vite, and AWS Lambda, featuring real-time schedule data and smart filtering.",
+    "description": "A progressive web app that helps Toronto residents find free and affordable drop-in sports activities across City of Toronto community centres, all in one place.",
+    "overview": [
+      "The City of Toronto lists activities on individual community centre pages. That works when someone already knows which centre they want to visit, but finding every centre offering a particular sport means checking those pages one by one.",
+      "TorontoXP reverses the search: residents can start with a sport, such as basketball or badminton, and discover where it is offered across the city.",
+      "A data pipeline pulls schedule information from the City's website each week and reorganizes centre-based listings into a sport-first view."
+    ],
     "highlights": [
-      "Brings Toronto community-centre sports activities into one discovery experience.",
-      "Uses schedule data and filters to help visitors narrow down activities.",
-      "Built with React, Vite, and AWS Lambda."
+      "Brings free and affordable drop-in sports activities into one searchable experience.",
+      "Uses a weekly data pipeline to organize community-centre schedules by sport.",
+      "Built as a PWA with React, Vite, and AWS Lambda."
     ],
     "category": "Full Stack & AI Integration",
     "image": null,
