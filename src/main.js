@@ -94,7 +94,6 @@ function navigate() {
     }
     prefixInternalLinks();
     updateActiveNav(page === 'project-detail' ? 'projects' : (page === 'critique-article' ? 'critiques' : page));
-    setupScrollAnimations();
     isInitialLoad = false;
     return;
   }
@@ -123,9 +122,6 @@ function navigate() {
 
     // Update active nav link
     updateActiveNav(page === 'project-detail' ? 'projects' : (page === 'critique-article' ? 'critiques' : page));
-
-    // Setup scroll animations
-    setupScrollAnimations();
 
     // Scroll to top
     window.scrollTo({ top: 0, behavior: 'instant' });
@@ -248,26 +244,6 @@ function initNavScroll() {
   window.addEventListener('scroll', () => {
     nav.classList.toggle('scrolled', window.scrollY > 20);
   }, { passive: true });
-}
-
-// --- Scroll Animations ---
-function setupScrollAnimations() {
-  const elements = document.querySelectorAll('.animate-on-scroll');
-  if (!elements.length) return;
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px',
-  });
-
-  elements.forEach(el => observer.observe(el));
 }
 
 // --- Page Transition Styles ---
