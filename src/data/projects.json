@@ -21,6 +21,25 @@
     "featured": true
   },
   {
+    "id": "travel-buggy-product-operations",
+    "title": "Travel Buggy — Product Information & Ecommerce Operations",
+    "description": "An independent product management case study examining Travel Buggy's product information, ecommerce experience, and dealer ecosystem, with a practical roadmap for improvement.",
+    "category": "Product Management Case Study",
+    "overview": [
+      "Conducted in October 2026, this evidence-based assessment reviewed product specifications, user manuals, dealer listings, competitor offerings, and customer-facing experiences across Travel Buggy's ecommerce ecosystem.",
+      "The analysis identified cross-channel data inconsistencies, opportunities to clarify product information, and UX gaps affecting product discovery and purchase confidence.",
+      "The proposed approach combines centralized product information governance with recommendations for ecommerce merchandising, documentation, launch readiness, and dealer enablement."
+    ],
+    "highlights": [
+      "Benchmarked competitor offerings and evaluated product information across storefront, manuals, and dealer channels.",
+      "Proposed SKU and revision tracking, Shopify catalog accuracy checks, dealer synchronization, and controlled publishing workflows.",
+      "Recommended clearer ecommerce merchandising, multilingual documentation, and dealer materials.",
+      "Prioritized the work in a 30/60/90-day implementation roadmap."
+    ],
+    "caseStudyUrl": "/Travel_Buggy_Product_Manager_Case_Study.pdf",
+    "featured": false
+  },
+  {
     "id": "qwen-sarcastic-llm",
     "title": "Fine-Tuned and Deployed a Custom LLM",
     "description": "Fine-tuned Qwen 3.5 9B with MLX on Apple Silicon to generate sarcastic conversational responses, then published the model to Hugging Face.",

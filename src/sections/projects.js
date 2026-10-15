@@ -8,7 +8,7 @@ export function renderProjects(container) {
       <div class="container">
         <div class="section-header animate-on-scroll">
           <h1 class="section-title">Projects</h1>
-          <p class="section-subtitle">From full-stack apps and AI to product prototypes — a showcase of versatile work.</p>
+          <p class="section-subtitle">From full-stack apps and AI to product strategy and operations — a showcase of versatile work.</p>
           <div class="filter-bar animate-on-scroll" id="project-filters" style="margin-top: var(--space-lg);">
             ${categories.map((cat, i) => `<button class="filter-btn ${i === 0 ? 'active' : ''}" data-filter="${cat}">${cat}</button>`).join('')}
           </div>
@@ -96,6 +96,7 @@ function renderProjectResources(project, small = false) {
     project.modelUrl ? `<a href="${project.modelUrl}" class="btn${size} btn-primary" target="_blank" rel="noopener noreferrer">Hugging Face ↗</a>` : '',
     project.githubUrl ? `<a href="${project.githubUrl}" class="btn${size} btn-secondary" target="_blank" rel="noopener noreferrer">GitHub ↗</a>` : '',
     project.prdUrl ? `<a href="${project.prdUrl}" class="btn${size} btn-secondary" target="_blank" rel="noopener noreferrer">PRD ↗</a>` : '',
+    project.caseStudyUrl ? `<a href="${project.caseStudyUrl}" class="btn${size} btn-secondary" target="_blank" rel="noopener noreferrer">Case Study ↗</a>` : '',
   ].filter(Boolean).join('');
 }
 
