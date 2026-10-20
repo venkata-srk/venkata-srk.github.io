@@ -41,6 +41,10 @@ export function renderCritiqueArticle(container, articleId) {
     return;
   }
 
+  const evidenceImage = critique.image
+    ? `${import.meta.env.BASE_URL}${critique.image.replace(/^\/+/, '')}`
+    : null;
+
   container.innerHTML = `
     <section class="section">
       <div class="container">
@@ -57,6 +61,13 @@ export function renderCritiqueArticle(container, articleId) {
               <div><dt>Discoverer Role</dt><dd>${critique.discovererRole || 'Independent'}</dd></div>
               <div><dt>Severity</dt><dd><span class="tag tag-severity-${critique.severity.toLowerCase()}">${critique.severity}</span></dd></div>
             </dl>
+
+            ${evidenceImage ? `
+              <figure class="critique-evidence">
+                <img src="${evidenceImage}" alt="${critique.imageAlt || ''}" loading="lazy">
+                ${critique.imageCaption ? `<figcaption>${critique.imageCaption}</figcaption>` : ''}
+              </figure>
+            ` : ''}
 
             <div class="critique-desc" style="line-height: var(--line-height-relaxed); margin-bottom: var(--space-2xl);">
               ${critique.description}

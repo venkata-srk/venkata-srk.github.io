@@ -30,6 +30,7 @@ export function renderAbout(container) {
                 <h4>🛠️ Engineering</h4>
                 <div class="skill-tags">
                   <span class="tag" style="border-radius: 0;">Python</span>
+                  <span class="tag" style="border-radius: 0;">GenAI & Agentic AI</span>
                   <span class="tag" style="border-radius: 0;">Java</span>
                   <span class="tag" style="border-radius: 0;">React</span>
                   <span class="tag" style="border-radius: 0;">AWS</span>

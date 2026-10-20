@@ -122,7 +122,7 @@
   {
     "id": "jsonlife-table-editor",
     "title": "JSONLife Table Editor",
-    "description": "An empowering and elegant JSON viewer and editor that transforms inherently chaotic & tangled JSON text into an intuitive, editable table.",
+    "description": "An empowering and elegant JSON viewer and editor that transforms inherently chaotic & tangled JSON text into an intuitive, and editable table.",
     "highlights": [
       "Presents JSON as an editable table instead of raw text.",
       "Focuses on making complex JSON easier to inspect and change."
