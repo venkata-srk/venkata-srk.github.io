@@ -148,6 +148,58 @@ export function renderAbout(container) {
                 </div>
                 <p style="color: var(--color-accent); font-weight: var(--font-weight-medium); margin-bottom: var(--space-sm);">Andhra University | Visakhapatnam, India</p>
               </div>
+
+              <h3 class="certifications-heading">Certifications</h3>
+              <ul class="certifications-list">
+                <li class="certification-item">
+                  <div class="certification-item-header">
+                    <h4>Introduction to Model Context Protocol</h4>
+                    <span>Issued June 2026</span>
+                  </div>
+                  <p>Anthropic</p>
+                  <div class="certification-links">
+                    <a href="https://verify.skilljar.com/c/mzixmmsyufgw" target="_blank" rel="noopener noreferrer">View credential ↗</a>
+                  </div>
+                </li>
+                <li class="certification-item">
+                  <div class="certification-item-header">
+                    <h4>Generative AI for Project Managers</h4>
+                    <span>Issued September 2026</span>
+                  </div>
+                  <p>Project Management Institute</p>
+                  <div class="certification-links">
+                    <a href="https://www.credly.com/badges/25fb755b-5608-4012-9627-b457afe4f201" target="_blank" rel="noopener noreferrer">View credential ↗</a>
+                    <a href="/Certificate_of_Completion_Generative_AI_Overview_for_Project_Managers_Aathee.pdf" target="_blank" rel="noopener noreferrer">View certificate PDF ↗</a>
+                  </div>
+                </li>
+                <li class="certification-item">
+                  <div class="certification-item-header">
+                    <h4>IAM Fundamentals</h4>
+                    <span>Issued September 2026</span>
+                  </div>
+                  <p>Ping Identity</p>
+                  <div class="certification-links">
+                    <a href="https://www.credly.com/badges/c5fbc539-ad84-4c05-b013-8e08ddd7135e" target="_blank" rel="noopener noreferrer">View credential ↗</a>
+                  </div>
+                </li>
+                <li class="certification-item">
+                  <div class="certification-item-header">
+                    <h4>Digital Accessibility Fundamentals</h4>
+                    <span>Issued September 2026</span>
+                  </div>
+                  <p>Intopia</p>
+                  <div class="certification-links">
+                    <a href="https://www.credly.com/badges/d3bb463a-1dce-4ecb-80b6-05b8ed8c8210" target="_blank" rel="noopener noreferrer">View credential ↗</a>
+                  </div>
+                </li>
+                <li class="certification-item">
+                  <div class="certification-item-header">
+                    <h4>SAFe 4 Practitioner</h4>
+                    <span>Issued December 2018 · Expired</span>
+                  </div>
+                  <p>Scaled Agile, Inc.</p>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
