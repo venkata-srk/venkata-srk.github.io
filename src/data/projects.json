@@ -21,6 +21,26 @@
     "featured": true
   },
   {
+    "id": "vicinity-radar",
+    "title": "Vicinity Radar — Real Estate Development Intelligence",
+    "description": "An independent, map-based proof of concept that combines Hines property information with Toronto development data to reveal nearby projects and market context.",
+    "category": "Real Estate Intelligence",
+    "overview": [
+      "Developed as an independent proof of concept for presentation to Hines, Vicinity Radar brings publicly available Hines property information together with the City of Toronto's Development Pipeline data.",
+      "Users can select a property and radius to explore proposed, approved, and ongoing developments nearby. Interactive maps, geographic filters, and development analytics make local market research easier for asset management, acquisition, and development decisions.",
+      "V1 demonstrates the product from opportunity discovery and MVP definition through design and delivery. A planned V2 would add AI-powered market intelligence, development impact analysis, natural-language research, and actionable insights.",
+      "Vicinity Radar is an independent research prototype and is not affiliated with Hines or the City of Toronto."
+    ],
+    "highlights": [
+      "Maps nearby developments around a selected property and search radius.",
+      "Shows development status alongside geographic filtering and analytics for market research.",
+      "Built with React, TypeScript, Tailwind CSS, and Leaflet."
+    ],
+    "liveUrl": "https://cosmomelon.github.io/VicinityRadar/",
+    "githubUrl": "https://github.com/CosmoMelon/VicinityRadar",
+    "featured": false
+  },
+  {
     "id": "travel-buggy-product-operations",
     "title": "Travel Buggy — Product Information & Ecommerce Operations",
     "description": "An independent product management case study examining Travel Buggy's product information, ecommerce experience, and dealer ecosystem, with a practical roadmap for improvement.",
@@ -90,6 +110,7 @@
     ],
     "liveUrl": "https://intqrac.github.io/",
     "githubUrl": "https://github.com/IntQRac/intqrac.github.io",
+    "discussionUrl": "https://www.reddit.com/r/PersonalFinanceCanada/comments/1wzah5h/why_doesnt_interac_etransfer_have_a_simple_qr/",
     "featured": true
   },
   {

@@ -42,6 +42,7 @@ export function renderHome(container) {
               <span class="project-category">${project.category}</span>
               <h3 class="project-title"><a href="/projects/${project.id}" class="project-title-link">${project.title}</a></h3>
               <p class="project-desc">${project.description}</p>
+              ${project.discussionUrl ? `<div class="project-links mt-1"><a href="${project.discussionUrl}" class="btn btn-sm btn-secondary" target="_blank" rel="noopener noreferrer">Reddit Discussion ↗</a></div>` : ''}
             </div>
           `).join('')}
         </div>

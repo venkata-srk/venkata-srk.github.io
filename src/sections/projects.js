@@ -95,6 +95,7 @@ function renderProjectResources(project, small = false) {
     project.liveUrl ? `<a href="${project.liveUrl}" class="btn${size} btn-primary" target="_blank" rel="noopener noreferrer">Live Demo ↗</a>` : '',
     project.modelUrl ? `<a href="${project.modelUrl}" class="btn${size} btn-primary" target="_blank" rel="noopener noreferrer">Hugging Face ↗</a>` : '',
     project.githubUrl ? `<a href="${project.githubUrl}" class="btn${size} btn-secondary" target="_blank" rel="noopener noreferrer">GitHub ↗</a>` : '',
+    project.discussionUrl ? `<a href="${project.discussionUrl}" class="btn${size} btn-secondary" target="_blank" rel="noopener noreferrer">Reddit Discussion ↗</a>` : '',
     project.prdUrl ? `<a href="${project.prdUrl}" class="btn${size} btn-secondary" target="_blank" rel="noopener noreferrer">PRD ↗</a>` : '',
     project.caseStudyUrl ? `<a href="${project.caseStudyUrl}" class="btn${size} btn-secondary" target="_blank" rel="noopener noreferrer">Case Study ↗</a>` : '',
   ].filter(Boolean).join('');
