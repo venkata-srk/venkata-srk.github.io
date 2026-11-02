@@ -37,7 +37,7 @@
   --color-shadow: transparent;
   --color-shadow-hover: transparent;
   /* Typography */
-  --font-family: 'IBM Plex Serif', serif;
+  --font-family: 'Aleo', serif;
   /* Used for headings */
   --font-family-body: 'Kanchenjunga', sans-serif;
   --font-size-xs: 0.75rem;
@@ -279,6 +279,7 @@ select {
   height: var(--nav-height);
   z-index: 1000;
   overflow: visible;
+  font-family: var(--font-family);
 }
 
 .nav-inner {
@@ -298,7 +299,6 @@ select {
 }
 
 .nav-logo {
-  font-family: var(--font-family);
   font-size: 1.625rem;
   font-weight: var(--font-weight-regular);
   color: var(--color-logo-venkata);

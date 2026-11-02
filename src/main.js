@@ -82,7 +82,7 @@ function navigate() {
     // Initial load: bypass inline styles so CSS entrance animation can play
     app.style.opacity = '';
     app.style.transform = '';
-    
+
     if (page === 'project-detail' && articleId) {
       renderProjectDetail(app, articleId);
     } else if (page === 'critique-article' && articleId) {
@@ -193,10 +193,10 @@ function initFont() {
   const headingFontChooser = document.getElementById('heading-font-chooser');
   const bodyFontChooser = document.getElementById('body-font-chooser');
   const headingFontStorageKey = 'portfolio-font-heading';
-  
+
   const storedHeadingFont = localStorage.getItem(headingFontStorageKey);
   const storedBodyFont = localStorage.getItem('portfolio-font-body');
-  
+
   // Heading Font
   if (storedHeadingFont) {
     document.documentElement.style.setProperty('--font-family', storedHeadingFont);
