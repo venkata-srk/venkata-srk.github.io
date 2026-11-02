@@ -9,8 +9,8 @@ export function renderCritiques(container) {
         <div class="section-header animate-on-scroll">
           <h1 class="section-title">Critiques</h1>
           <p class="section-subtitle">I help products get better by spotting what others mostly miss. Real issues found on well-known platforms & apps, with actionable suggestions.</p>
-          <div class="filter-bar animate-on-scroll" id="critique-filters" style="margin-top: var(--space-lg);">
-            ${categories.map((type, i) => `<button class="filter-btn ${i === 0 ? 'active' : ''}" data-filter="${type}">${type}</button>`).join('')}
+          <div class="filter-bar" id="critique-filters" role="group" aria-label="Filter critiques by category">
+            ${categories.map((type, i) => `<button type="button" class="filter-btn ${i === 0 ? 'active' : ''}" data-filter="${type}" aria-pressed="${i === 0}">${type}</button>`).join('')}
           </div>
         </div>
 
@@ -113,7 +113,7 @@ function renderCritiqueCard(critique) {
           <p>${critique.excerpt || critique.description}</p>
         </div>
         
-        <div style="margin-top: auto; color: var(--color-accent); font-size: var(--font-size-sm); font-weight: 500;">
+        <div class="critique-read-more" style="margin-top: auto; color: var(--color-accent); font-size: var(--font-size-sm); font-weight: 500;">
           Read full critique →
         </div>
       </div>
@@ -131,8 +131,12 @@ function setupCritiqueFilters() {
     if (!btn) return;
 
     // Update active state
-    filterBar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    filterBar.querySelectorAll('.filter-btn').forEach(b => {
+      b.classList.remove('active');
+      b.setAttribute('aria-pressed', 'false');
+    });
     btn.classList.add('active');
+    btn.setAttribute('aria-pressed', 'true');
 
     const filter = btn.dataset.filter;
     const cards = grid.querySelectorAll('.critique-card-link');
@@ -140,8 +144,6 @@ function setupCritiqueFilters() {
     cards.forEach(card => {
       if (filter === 'All' || card.dataset.category === filter) {
         card.style.display = '';
-        card.querySelector('.card').style.opacity = '1';
-        card.querySelector('.card').style.transform = 'translateY(0)';
       } else {
         card.style.display = 'none';
       }

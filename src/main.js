@@ -158,18 +158,43 @@ document.addEventListener('click', (e) => {
 
 // --- Theme Manager ---
 function initTheme() {
-  document.documentElement.dataset.theme = 'dark';
+  const toggle = document.getElementById('theme-toggle');
+  const colorScheme = document.querySelector('meta[name="color-scheme"]');
+  let savedTheme;
+
+  try {
+    savedTheme = localStorage.getItem('portfolio-theme');
+  } catch {
+    // The switch still works when browser storage is unavailable.
+  }
+
+  const applyTheme = (theme) => {
+    document.documentElement.dataset.theme = theme;
+    if (colorScheme) colorScheme.content = theme;
+    if (toggle) toggle.setAttribute('aria-label', `Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`);
+  };
+
+  applyTheme(savedTheme === 'light' ? 'light' : 'dark');
+
+  toggle?.addEventListener('click', () => {
+    const nextTheme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+    applyTheme(nextTheme);
+    try {
+      localStorage.setItem('portfolio-theme', nextTheme);
+    } catch {
+      // Keep the current page theme even if storage is unavailable.
+    }
+  });
 }
 
 
 // --- Font Manager ---
 function initFont() {
-  if (document.querySelector('.font-choosers-container')?.hidden) return;
-
   const headingFontChooser = document.getElementById('heading-font-chooser');
   const bodyFontChooser = document.getElementById('body-font-chooser');
+  const headingFontStorageKey = 'portfolio-font-heading';
   
-  const storedHeadingFont = localStorage.getItem('portfolio-font-heading');
+  const storedHeadingFont = localStorage.getItem(headingFontStorageKey);
   const storedBodyFont = localStorage.getItem('portfolio-font-body');
   
   // Heading Font
@@ -182,7 +207,7 @@ function initFont() {
     headingFontChooser.addEventListener('change', (e) => {
       const selectedFont = e.target.value;
       document.documentElement.style.setProperty('--font-family', selectedFont);
-      localStorage.setItem('portfolio-font-heading', selectedFont);
+      localStorage.setItem(headingFontStorageKey, selectedFont);
     });
   }
 
@@ -254,7 +279,7 @@ function init() {
   // Footer year
   document.getElementById('footer-year').textContent = new Date().getFullYear();
 
-  // Theme (forced dark)
+  // Theme
   initTheme();
   initFont();
 

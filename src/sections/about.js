@@ -23,7 +23,7 @@ export function renderAbout(container) {
             <p class="animate-on-scroll">
               Today, I operate at the intersection of all disciplines. Whether I'm architecting a system, defining a product roadmap, designing a test strategy, or evaluating a business opportunity — I bring the same rigor, curiosity, and care.
             </p>
-            <a class="btn btn-secondary animate-on-scroll" href="https://www.linkedin.com/in/venkatasrk/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a>
+            <a class="btn btn-secondary animate-on-scroll" href="https://www.linkedin.com/in/venkatasrk/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn →</a>
 
             <div class="skills-grid animate-on-scroll">
               <div class="skill-category">
@@ -158,7 +158,7 @@ export function renderAbout(container) {
                   </div>
                   <p>Anthropic</p>
                   <div class="certification-links">
-                    <a href="https://verify.skilljar.com/c/mzixmmsyufgw" target="_blank" rel="noopener noreferrer">View credential ↗</a>
+                    <a href="https://verify.skilljar.com/c/mzixmmsyufgw" target="_blank" rel="noopener noreferrer">View credential →</a>
                   </div>
                 </li>
                 <li class="certification-item">
@@ -168,8 +168,8 @@ export function renderAbout(container) {
                   </div>
                   <p>Project Management Institute</p>
                   <div class="certification-links">
-                    <a href="https://www.credly.com/badges/25fb755b-5608-4012-9627-b457afe4f201" target="_blank" rel="noopener noreferrer">View credential ↗</a>
-                    <a href="/Certificate_of_Completion_Generative_AI_Overview_for_Project_Managers_Aathee.pdf" target="_blank" rel="noopener noreferrer">View certificate PDF ↗</a>
+                    <a href="https://www.credly.com/badges/25fb755b-5608-4012-9627-b457afe4f201" target="_blank" rel="noopener noreferrer">View credential →</a>
+                    <a href="/Certificate_of_Completion_Generative_AI_Overview_for_Project_Managers_Aathee.pdf" target="_blank" rel="noopener noreferrer">View certificate PDF →</a>
                   </div>
                 </li>
                 <li class="certification-item">
@@ -179,7 +179,7 @@ export function renderAbout(container) {
                   </div>
                   <p>Ping Identity</p>
                   <div class="certification-links">
-                    <a href="https://www.credly.com/badges/c5fbc539-ad84-4c05-b013-8e08ddd7135e" target="_blank" rel="noopener noreferrer">View credential ↗</a>
+                    <a href="https://www.credly.com/badges/c5fbc539-ad84-4c05-b013-8e08ddd7135e" target="_blank" rel="noopener noreferrer">View credential →</a>
                   </div>
                 </li>
                 <li class="certification-item">
@@ -189,7 +189,7 @@ export function renderAbout(container) {
                   </div>
                   <p>Intopia</p>
                   <div class="certification-links">
-                    <a href="https://www.credly.com/badges/d3bb463a-1dce-4ecb-80b6-05b8ed8c8210" target="_blank" rel="noopener noreferrer">View credential ↗</a>
+                    <a href="https://www.credly.com/badges/d3bb463a-1dce-4ecb-80b6-05b8ed8c8210" target="_blank" rel="noopener noreferrer">View credential →</a>
                   </div>
                 </li>
                 <li class="certification-item">

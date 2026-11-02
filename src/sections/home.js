@@ -12,14 +12,14 @@ export function renderHome(container) {
         <div style="max-width: 900px;" class="animate-on-scroll">
           <h1 style="font-size: var(--font-size-2xl); margin-bottom: var(--space-md); color: var(--color-primary); font-family: var(--font-family-body); font-weight: var(--font-weight-regular);">
             Hello, World! <span class="waving-hand" style="display: inline-block; transform-origin: 70% 70%;">👋</span> 
-            <br> I'm Venkata SRK
+            <br> I'm Venkata Siva Rama Krishna
           </h1>
           <p class="hero-subtitle home-hero-subtitle">
-            A versatile engineer and builder who works at the intersection of Product, UX, QA, and Business Strategy to deliver things that truly matter to users.
+            A versatile product builder and owner who bridges Product, UX, Engineering, QA, and Business Strategy to deliver things that truly matter to users.
           </p>
-          <div class="role-rotator" style="margin-bottom: var(--space-xl);">
-            <!--<span class="static-text">Currently working as a Data Analyst at May Lane Inc</span>-->
-          </div>
+          <!--<div class="role-rotator" style="margin-bottom: var(--space-xl);">
+            <span class="static-text">Currently working as a Data Analyst at May Lane Inc</span>
+          </div>-->
           <div class="hero-cta" style="justify-content: flex-start;">
             <a href="/projects" class="btn btn-secondary" style="border-radius: 0;">Explore My Work</a>
             <a href="/contact" class="btn btn-primary" style="border-radius: 0;">Get in Touch</a>
@@ -34,9 +34,8 @@ export function renderHome(container) {
         <div class="section-header animate-on-scroll">
           <h2 class="section-title">Selected Work</h2>
           <p class="section-subtitle">A selection of projects that showcase different facets of my thinking.</p>
-          <a href="/projects" class="btn btn-secondary mt-2" style="border-radius: 0;">View All Projects →</a>
         </div>
-        <div class="stagger-children">
+        <div class="stagger-children home-work-grid">
           ${featuredProjects.map(project => `
             <div class="card project-card animate-on-scroll">
               <span class="project-category">${project.category}</span>
@@ -44,6 +43,9 @@ export function renderHome(container) {
               <p class="project-desc">${project.description}</p>
             </div>
           `).join('')}
+        </div>
+        <div class="animate-on-scroll">
+          <a href="/projects" class="btn btn-secondary" style="border-radius: 0;">View All Projects →</a>
         </div>
       </div>
     </section>
@@ -76,7 +78,7 @@ export function renderHome(container) {
                 <p>${featuredCritique.excerpt || featuredCritique.description}</p>
               </div>
               
-              <div style="margin-top: var(--space-md); color: var(--color-accent); font-size: var(--font-size-sm); font-weight: 500;">
+              <div class="critique-read-more" style="margin-top: var(--space-md); color: var(--color-accent); font-size: var(--font-size-sm); font-weight: 500;">
                 Read full critique →
               </div>
             </div>

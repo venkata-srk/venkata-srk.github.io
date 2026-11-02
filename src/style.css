@@ -10,21 +10,21 @@
 :root {
   /* Colors - Dark Palette */
   color-scheme: dark;
-  --color-primary: #E8E0D8;
+  --color-primary: #d9d0c9;
   --color-accent: #D4A574;
-  --color-accent-hover: #E8C49A;
+  --color-accent-hover: #e9b375;
   --color-accent-fill: #D4A574;
-  --color-accent-fill-hover: #E8C49A;
+  --color-accent-fill-hover: #e9b375;
   --color-accent-fill-border: #D4A574;
-  --color-on-accent: #2a2a2a;
+  --color-on-accent: #212121;
   --color-logo-venkata: #E8E0D8;
-  --color-accent-alt: #AFAFAF;
+  --color-accent-alt: #afafaf;
   --color-bg: #2a2a2a;
   --color-bg-gradient: #2a2a2a;
   --color-surface: #2a2a2a;
   --color-surface-hover: #383838;
   --color-tag-bg: #383838;
-  --color-muted: #C8BFB5;
+  --color-muted: #d2cac1;
   --color-border: #636363;
   --color-control-border: #99918A;
   --color-focus: #E8C49A;
@@ -32,8 +32,8 @@
   --color-danger-bg: #79273A;
   --color-warning-bg: #9A5200;
   --color-on-status: #FFFFFF;
-  --color-lamp: #8E837A;
-  --color-bulb: #FBF8CA;
+  --color-lamp: #7c746c;
+  --color-bulb: #fff891;
   --color-shadow: transparent;
   --color-shadow-hover: transparent;
   /* Typography */
@@ -89,20 +89,20 @@
 :root[data-theme="light"] {
   /* Colors - Light Palette */
   color-scheme: light;
-  --color-primary: #2a2a2a;
-  --color-accent: #80501F;
-  --color-accent-hover: #653B19;
+  --color-primary: #30302f;
+  --color-accent: #9d6125;
+  --color-accent-hover: #c17c2e;
   --color-accent-fill: #D4A574;
-  --color-accent-fill-hover: #E8C49A;
-  --color-accent-fill-border: #80501F;
-  --color-on-accent: #2a2a2a;
+  --color-accent-fill-hover: #da9f5b;
+  --color-accent-fill-border: #ab7036;
+  --color-on-accent: #212121;
   --color-accent-alt: #5A5A5A;
   --color-bg: #FAF9F6;
   --color-bg-gradient: #FAF9F6;
   --color-surface: #FAF9F6;
   --color-surface-hover: #F4F0EA;
-  --color-tag-bg: #F4F0EA;
-  --color-muted: #6A655F;
+  --color-tag-bg: #f8f4e8;
+  --color-muted: #494949;
   --color-border: #C8C0B8;
   --color-control-border: #84776C;
   --color-focus: #80501F;
@@ -110,8 +110,9 @@
   --color-danger-bg: #9A2845;
   --color-warning-bg: #8A4900;
   --color-on-status: #FFFFFF;
-  --color-lamp: #515151;
-  --color-bulb: #80501F;
+  --color-logo-venkata: #2a2a2a;
+  --color-lamp: #6f6f6f;
+  --color-bulb: #e7ba07;
   --color-shadow: rgba(0, 0, 0, 0.05);
   --color-shadow-hover: rgba(0, 0, 0, 0.1);
 }
@@ -221,6 +222,7 @@ select {
 }
 
 .section-subtitle {
+  margin-bottom: var(--space-md);
   font-size: var(--font-size-lg);
   color: var(--color-muted);
   line-height: var(--line-height-relaxed);
@@ -297,7 +299,7 @@ select {
 
 .nav-logo {
   font-family: var(--font-family);
-  font-size: var(--font-size-2xl);
+  font-size: 1.625rem;
   font-weight: var(--font-weight-regular);
   color: var(--color-logo-venkata);
   text-decoration: none;
@@ -307,12 +309,6 @@ select {
 
 .nav-logo:hover {
   color: var(--color-logo-venkata);
-}
-
-:root[data-theme="light"] .nav-logo {
-  background: #2a2a2a;
-  padding: 4px 8px;
-  margin-left: -8px;
 }
 
 .nav-logo span {
@@ -442,7 +438,7 @@ select {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .nav-hamburger {
     display: flex;
   }
@@ -714,7 +710,7 @@ select {
 }
 
 .home-hero-subtitle {
-  margin: 0 0 var(--space-xl);
+  margin: 0 0 var(--space-3xl);
   max-width: none;
   text-align: left;
   font-family: var(--font-family);
@@ -933,6 +929,7 @@ select {
 
 .blog-back-btn:hover {
   gap: var(--space-md);
+  color: var(--color-accent-hover);
 }
 
 /* --- Project Cards --- */
@@ -952,7 +949,7 @@ select {
 }
 
 .project-card .project-desc {
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-base);
   color: var(--color-muted);
   line-height: var(--line-height-relaxed);
   margin-bottom: var(--space-lg);
@@ -1100,7 +1097,7 @@ select {
 }
 
 .critique-card .critique-desc {
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-base);
   color: var(--color-muted);
   line-height: var(--line-height-relaxed);
   margin-bottom: var(--space-md);
@@ -1157,6 +1154,7 @@ select {
 }
 
 .about-content h2 {
+  font-family: var(--font-family);
   font-size: var(--font-size-3xl);
   font-weight: var(--font-weight-bold);
   margin-bottom: var(--space-lg);
@@ -1513,6 +1511,7 @@ select {
 }
 
 @media (max-width: 460px) {
+
   .container,
   .nav-inner {
     padding-inline: 14px;
@@ -1855,14 +1854,16 @@ footer {
   margin-bottom: var(--space-sm);
   border-bottom: 1px solid var(--color-border);
   padding-bottom: var(--space-xs);
-  color: var(--color-primary); /* Keep headings more prominent */
+  color: var(--color-primary);
+  /* Keep headings more prominent */
 }
 
 .critique-desc h3:first-child {
   margin-top: 0;
 }
 
-.critique-desc ul, .critique-desc ol {
+.critique-desc ul,
+.critique-desc ol {
   list-style: inherit;
   margin-left: var(--space-xl);
   margin-bottom: var(--space-md);
@@ -1870,4 +1871,181 @@ footer {
 
 .critique-desc p {
   margin-bottom: var(--space-sm);
+}
+
+/* Keep the pre-Fluent layout compatible with the controls added since then. */
+.skip-link {
+  position: fixed;
+  top: -60px;
+  left: 16px;
+  z-index: 2000;
+  padding: 12px 16px;
+  background: var(--color-surface);
+  color: var(--color-primary);
+}
+
+.skip-link:focus {
+  top: 8px;
+}
+
+.nav-left,
+.nav-right {
+  align-items: center;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  height: 90px;
+}
+
+.nav-right {
+  gap: 0.5rem;
+}
+
+.nav-links {
+  gap: 0.25rem;
+}
+
+.nav-link {
+  padding-inline: 0.7rem;
+}
+
+.font-choosers-container {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-left: 0.5rem;
+}
+
+.font-choosers-container[hidden] {
+  display: none !important;
+}
+
+.font-chooser-field>span {
+  display: none;
+}
+
+.font-chooser {
+  width: 128px;
+  font-size: 0.7rem;
+}
+
+.theme-toggle:hover {
+  transform: none;
+}
+
+.theme-toggle .icon {
+  width: 20px;
+  height: 20px;
+}
+
+.theme-toggle .icon-moon,
+:root[data-theme="light"] .theme-toggle .icon-sun {
+  display: none;
+}
+
+:root[data-theme="light"] .theme-toggle .icon-moon {
+  display: block;
+}
+
+.critique-card-link:hover .critique-read-more,
+.critique-card-link:focus-visible .critique-read-more {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.home-work-grid,
+#project-grid,
+#critique-grid {
+  display: grid;
+  gap: var(--space-lg) var(--space-2xl);
+}
+
+.home-work-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+#project-grid,
+#critique-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.home-work-grid>.project-card,
+#project-grid>.project-card,
+#critique-grid>.critique-card-link {
+  min-width: 0;
+}
+
+#project-grid>.project-card,
+#critique-grid .critique-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#project-grid .project-links {
+  margin-top: auto;
+}
+
+@media (max-width: 900px) {
+  .home-work-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+
+  .home-work-grid,
+  #project-grid,
+  #critique-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 960px) {
+  .section {
+    padding: var(--space-xl) 0;
+  }
+
+  .section-header {
+    margin-bottom: var(--space-md);
+  }
+}
+
+@media (max-width: 960px) {
+  :root {
+    --nav-height: 180px;
+  }
+
+  .nav-links {
+    overflow-y: auto;
+  }
+
+  .font-choosers-container {
+    display: flex !important;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    margin: var(--space-md) 0 0;
+  }
+
+  .font-chooser-field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+    color: var(--color-muted);
+    font-size: 0.75rem;
+  }
+
+  .font-chooser-field>span {
+    display: block;
+  }
+
+  .font-chooser {
+    width: 100%;
+    min-height: 40px;
+    font-size: var(--font-size-sm);
+  }
 }

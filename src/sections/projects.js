@@ -9,8 +9,8 @@ export function renderProjects(container) {
         <div class="section-header animate-on-scroll">
           <h1 class="section-title">Projects</h1>
           <p class="section-subtitle">From full-stack apps and AI to product strategy and operations — a showcase of versatile work.</p>
-          <div class="filter-bar animate-on-scroll" id="project-filters" style="margin-top: var(--space-lg);">
-            ${categories.map((cat, i) => `<button class="filter-btn ${i === 0 ? 'active' : ''}" data-filter="${cat}">${cat}</button>`).join('')}
+          <div class="filter-bar" id="project-filters" role="group" aria-label="Filter projects by category">
+            ${categories.map((cat, i) => `<button type="button" class="filter-btn ${i === 0 ? 'active' : ''}" data-filter="${cat}" aria-pressed="${i === 0}">${cat}</button>`).join('')}
           </div>
         </div>
 
@@ -92,12 +92,12 @@ function renderProjectCard(project) {
 function renderProjectResources(project, small = false) {
   const size = small ? ' btn-sm' : '';
   return [
-    project.liveUrl ? `<a href="${project.liveUrl}" class="btn${size} btn-primary" target="_blank" rel="noopener noreferrer">Live Demo ↗</a>` : '',
-    project.modelUrl ? `<a href="${project.modelUrl}" class="btn${size} btn-primary" target="_blank" rel="noopener noreferrer">Hugging Face ↗</a>` : '',
-    project.githubUrl ? `<a href="${project.githubUrl}" class="btn${size} btn-secondary" target="_blank" rel="noopener noreferrer">GitHub ↗</a>` : '',
-    project.caseStudyUrl ? `<a href="${project.caseStudyUrl}" class="btn${size} btn-secondary" target="_blank" rel="noopener noreferrer">Case Study ↗</a>` : '',
-    project.discussionUrl ? `<a href="${project.discussionUrl}" class="btn${size} btn-secondary" target="_blank" rel="noopener noreferrer">Reddit Discussion ↗</a>` : '',
-    project.prdUrl ? `<a href="${project.prdUrl}" class="btn${size} btn-secondary" target="_blank" rel="noopener noreferrer">PRD ↗</a>` : '',
+    project.liveUrl ? `<a href="${project.liveUrl}" class="btn${size} btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a>` : '',
+    project.modelUrl ? `<a href="${project.modelUrl}" class="btn${size} btn-primary" target="_blank" rel="noopener noreferrer">Hugging Face</a>` : '',
+    project.githubUrl ? `<a href="${project.githubUrl}" class="btn${size} btn-secondary" target="_blank" rel="noopener noreferrer">GitHub</a>` : '',
+    project.caseStudyUrl ? `<a href="${project.caseStudyUrl}" class="btn${size} btn-secondary" target="_blank" rel="noopener noreferrer">Case Study</a>` : '',
+    project.discussionUrl ? `<a href="${project.discussionUrl}" class="btn${size} btn-secondary" target="_blank" rel="noopener noreferrer">Reddit Discussion</a>` : '',
+    project.prdUrl ? `<a href="${project.prdUrl}" class="btn${size} btn-secondary" target="_blank" rel="noopener noreferrer">PRD</a>` : '',
   ].filter(Boolean).join('');
 }
 
@@ -111,8 +111,12 @@ function setupProjectFilters() {
     if (!btn) return;
 
     // Update active state
-    filterBar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    filterBar.querySelectorAll('.filter-btn').forEach(b => {
+      b.classList.remove('active');
+      b.setAttribute('aria-pressed', 'false');
+    });
     btn.classList.add('active');
+    btn.setAttribute('aria-pressed', 'true');
 
     const filter = btn.dataset.filter;
     const cards = grid.querySelectorAll('.project-card');
@@ -120,8 +124,6 @@ function setupProjectFilters() {
     cards.forEach(card => {
       if (filter === 'All' || card.dataset.category === filter) {
         card.style.display = '';
-        card.style.opacity = '1';
-        card.style.transform = 'translateY(0)';
       } else {
         card.style.display = 'none';
       }

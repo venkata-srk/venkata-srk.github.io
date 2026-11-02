@@ -32,7 +32,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kanchenjunga:wght@400;500;600;700&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Marmelad&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=SUSE:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Notch:wght@200..700&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&family=Google+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kanchenjunga:wght@400;500;600;700&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Marmelad&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=SUSE:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Notch:wght@200..700&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap"
     rel="stylesheet">
   <title>VenkataSRK Portfolio — Product Builder</title>
   <script type="text/javascript">
@@ -58,15 +58,15 @@
 </head>
 
 <body>
-  <nav class="nav" id="main-nav">
+  <a class="skip-link" href="#app">Skip to main content</a>
+  <nav class="nav" id="main-nav" aria-label="Primary navigation">
     <div class="nav-inner">
 
-      <div class="nav-left" style="display: flex; align-items: center; height: 90px;">
+      <div class="nav-left">
         <a href="/" class="nav-logo">venkata<span>srk</span></a>
       </div>
 
-      <div class="nav-center" style="display: flex; justify-content: center; position: relative;">
-        <!-- Lamp SVG -->
+      <div class="nav-center" aria-hidden="true">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 130" class="lamp" height="180">
           <g>
             <circle class="bulb" cx="30" cy="109.3" r="10.7" />
@@ -81,49 +81,70 @@
         </svg>
       </div>
 
-      <div class="nav-right" style="display: flex; align-items: center; height: 90px; gap: 1rem;">
+      <div class="nav-right">
         <div class="nav-links" id="nav-links">
           <a href="/about" class="nav-link" data-nav="about">About</a>
           <a href="/projects" class="nav-link" data-nav="projects">Projects</a>
           <a href="/critiques" class="nav-link" data-nav="critiques">Critiques</a>
           <a href="/contact" class="nav-link" data-nav="contact">Contact</a>
+
+          <div class="font-choosers-container" hidden>
+            <label class="font-chooser-field">
+              <span>Heading font</span>
+              <select id="heading-font-chooser" class="font-chooser" aria-label="Choose heading font"
+                title="Heading Font">
+                <option value="'Inter', sans-serif">Inter (Heading)</option>
+                <option value="'Aleo', serif">Aleo</option>
+                <option value="'Figtree', sans-serif">Figtree</option>
+                <option value="'GFS Neohellenic', sans-serif">GFS Neohellenic</option>
+                <option value="'Google Sans', sans-serif">Google Sans</option>
+                <option value="'IBM Plex Serif', serif" selected>IBM Plex Serif</option>
+                <option value="'Kanchenjunga', sans-serif">Kanchenjunga</option>
+                <option value="'Livvic', sans-serif">Livvic</option>
+                <option value="'Lora', serif">Lora</option>
+                <option value="'Marmelad', sans-serif">Marmelad</option>
+                <option value="'Merriweather', serif">Merriweather</option>
+                <option value="'Nunito', sans-serif">Nunito</option>
+                <option value="'SUSE', sans-serif">SUSE</option>
+                <option value="'Stack Sans Notch', sans-serif">Stack Sans Notch</option>
+                <option value="'Yrsa', serif">Yrsa</option>
+              </select>
+            </label>
+            <label class="font-chooser-field">
+              <span>Body font</span>
+              <select id="body-font-chooser" class="font-chooser" aria-label="Choose body font" title="Body Font">
+                <option value="'Inter', sans-serif">Inter (Body)</option>
+                <option value="'Aleo', serif">Aleo</option>
+                <option value="'Figtree', sans-serif">Figtree</option>
+                <option value="'GFS Neohellenic', sans-serif">GFS Neohellenic</option>
+                <option value="'Google Sans', sans-serif">Google Sans</option>
+                <option value="'IBM Plex Serif', serif">IBM Plex Serif</option>
+                <option value="'Kanchenjunga', sans-serif" selected>Kanchenjunga</option>
+                <option value="'Livvic', sans-serif">Livvic</option>
+                <option value="'Lora', serif">Lora</option>
+                <option value="'Marmelad', sans-serif">Marmelad</option>
+                <option value="'Merriweather', serif">Merriweather</option>
+                <option value="'Nunito', sans-serif">Nunito</option>
+                <option value="'SUSE', sans-serif">SUSE</option>
+                <option value="'Stack Sans Notch', sans-serif">Stack Sans Notch</option>
+                <option value="'Yrsa', serif">Yrsa</option>
+              </select>
+            </label>
+          </div>
         </div>
 
-        <div class="font-choosers-container" hidden>
-          <select id="heading-font-chooser" class="font-chooser" aria-label="Choose heading font" title="Heading Font"
-            style="font-size: 10px; padding: 2px;">
-            <option value="'Inter', sans-serif">Inter (Heading)</option>
-            <option value="'Figtree', sans-serif">Figtree</option>
-            <option value="'GFS Neohellenic', sans-serif">GFS Neohellenic</option>
-            <option value="'IBM Plex Serif', serif" selected>IBM Plex Serif</option>
-            <option value="'Kanchenjunga', sans-serif">Kanchenjunga</option>
-            <option value="'Livvic', sans-serif">Livvic</option>
-            <option value="'Lora', serif">Lora</option>
-            <option value="'Marmelad', sans-serif">Marmelad</option>
-            <option value="'Merriweather', serif">Merriweather</option>
-            <option value="'SUSE', sans-serif">SUSE</option>
-            <option value="'Stack Sans Notch', sans-serif">Stack Sans Notch</option>
-            <option value="'Yrsa', serif">Yrsa</option>
-          </select>
-          <select id="body-font-chooser" class="font-chooser" aria-label="Choose body font" title="Body Font"
-            style="font-size: 10px; padding: 2px;">
-            <option value="'Inter', sans-serif">Inter (Body)</option>
-            <option value="'Figtree', sans-serif">Figtree</option>
-            <option value="'GFS Neohellenic', sans-serif">GFS Neohellenic</option>
-            <option value="'IBM Plex Serif', serif">IBM Plex Serif</option>
-            <option value="'Kanchenjunga', sans-serif" selected>Kanchenjunga</option>
-            <option value="'Livvic', sans-serif">Livvic</option>
-            <option value="'Lora', serif">Lora</option>
-            <option value="'Marmelad', sans-serif">Marmelad</option>
-            <option value="'Merriweather', serif">Merriweather</option>
-            <option value="'SUSE', sans-serif">SUSE</option>
-            <option value="'Stack Sans Notch', sans-serif">Stack Sans Notch</option>
-            <option value="'Yrsa', serif">Yrsa</option>
-          </select>
-        </div>
-
-        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to light theme" hidden>
-          <span class="icon">☀️</span>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to light theme">
+          <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path
+              d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42">
+            </path>
+          </svg>
+          <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5 8.5 8.5 0 1 0 20.5 14.5Z"></path>
+          </svg>
         </button>
 
         <button class="nav-hamburger" id="nav-hamburger" type="button" aria-label="Open menu" aria-controls="nav-links"
