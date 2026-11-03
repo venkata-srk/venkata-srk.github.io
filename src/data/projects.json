@@ -21,6 +21,26 @@
     "featured": true
   },
   {
+    "id": "daycompass",
+    "title": "DayCompass",
+    "description": "An AI chat app that helps people plan activities around real-world conditions and commitments, calling live weather, calendar, and places tools when needed.",
+    "category": "AI & Productivity",
+    "overview": [
+      "Built with Python and Streamlit, DayCompass uses native LLM tool calling to decide when live information would help answer a planning question, then combines the results into conversational recommendations.",
+      "Users can enable or disable each of its three available tools: Open-Meteo weather, Google Calendar, and Google Places. Streaming responses and multi-turn context keep the planning conversation fluid.",
+      "The app supports OpenRouter, NVIDIA, Cloudflare Workers AI, Groq, and Gemini. Its modular architecture makes it straightforward to add more tools and providers later."
+    ],
+    "highlights": [
+      "Uses native LLM tool calling to fetch relevant live information for activity planning.",
+      "Lets users control weather, calendar, and places tool availability independently.",
+      "Streams responses and maintains context across multiple turns.",
+      "Integrates five LLM providers through a modular architecture."
+    ],
+    "liveUrl": "https://daycompass.streamlit.app/",
+    "githubUrl": "https://github.com/CosmoMelon/DayCompass",
+    "featured": false
+  },
+  {
     "id": "vicinity-radar",
     "title": "Vicinity Radar — Real Estate Development Intelligence",
     "description": "An independent, map-based proof of concept that combines Hines property information with Toronto development data to reveal nearby projects and market context.",
