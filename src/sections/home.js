@@ -15,7 +15,7 @@ export function renderHome(container) {
             <br> I'm Venkata Siva Rama Krishna
           </h1>
           <p class="hero-subtitle home-hero-subtitle">
-            A versatile product owner and builder who bridges Product, UX, Engineering, QA, and Business Strategy to deliver things that truly matter to users.
+            A versatile product owner and builder who works across Product, UX, Engineering, QA, and Business Strategy to deliver things that truly matter to users.
           </p>
           <!--<div class="role-rotator" style="margin-bottom: var(--space-xl);">
             <span class="static-text">Currently working as a Data Analyst at May Lane Inc</span>
