@@ -52,6 +52,11 @@ export function renderProjectDetail(container, projectId) {
             <p class="project-detail-lead">${project.description}</p>
           </header>
 
+          <div class="project-detail-section animate-on-scroll">
+            <h2>Explore the project</h2>
+            <div class="project-detail-links">${renderProjectResources(project)}</div>
+          </div>
+
           ${project.overview?.length ? `
             <div class="project-detail-section animate-on-scroll">
               <h2>Overview</h2>
@@ -66,10 +71,6 @@ export function renderProjectDetail(container, projectId) {
             </div>
           ` : ''}
 
-          <div class="project-detail-section animate-on-scroll">
-            <h2>Explore the project</h2>
-            <div class="project-detail-links">${renderProjectResources(project)}</div>
-          </div>
         </article>
       </div>
     </section>
